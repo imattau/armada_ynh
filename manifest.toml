@@ -3,7 +3,7 @@ packaging_format = 2
 id = "armada"
 name = "Armada"
 description.en = "End-to-end encrypted community chat built on Nostr"
-version = "0.3.0~ynh6"
+version = "0.59.2~ynh1"
 maintainers = ["armada_ynh contributors"]
 
 [upstream]
@@ -62,8 +62,8 @@ ram.runtime = "1M"
 [resources]
 
     [resources.sources.main]
-    url = "https://github.com/soapbox-pub/armada/archive/5b99f88d309052abc1eeb4f0b2ef437de086e709.tar.gz"
-    sha256 = "60322ce80538e047d40a4846d142eaf60a1ae87e1f758da3b75f6547419a5804"
+    url = "https://gitlab.com/soapbox-pub/armada/-/archive/17d4fcb0d0d478e42dffde6b42b276eba07d0b39/armada.tar.gz"
+    sha256 = "68a590ce492bf176a6e8a47bc64be0fe2be479d17eec41e320da45d3ca5dda5c"
 
     [resources.system_user]
 
