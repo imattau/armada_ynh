@@ -1,0 +1,9 @@
+#!/bin/bash
+set -eu
+
+source /usr/share/yunohost/helpers
+
+ynh_script_progression --message="Updating Armada URL..." --weight=1
+ynh_change_url_nginx_config
+
+ynh_script_progression --message="Armada URL update complete" --last

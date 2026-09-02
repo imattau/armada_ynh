@@ -1,0 +1,14 @@
+#!/bin/bash
+set -eu
+
+source /usr/share/yunohost/helpers
+source "$(dirname "$0")/_common.sh"
+
+ynh_script_progression --message="Refreshing Armada source files..." --weight=1
+ynh_setup_source --source_id=main
+build_armada
+
+ynh_script_progression --message="Updating Nginx configuration..." --weight=1
+ynh_add_nginx_config
+
+ynh_script_progression --message="Armada upgrade complete" --last
