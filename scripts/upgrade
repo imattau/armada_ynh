@@ -6,6 +6,7 @@ source "$(dirname "$0")/_common.sh"
 
 ynh_script_progression --message="Refreshing Armada source files..." --weight=1
 ynh_setup_source --source_id=main
+ynh_script_progression --message="Building Armada frontend..." --weight=5
 build_armada
 
 ynh_script_progression --message="Updating Nginx configuration..." --weight=1
