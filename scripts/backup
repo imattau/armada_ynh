@@ -2,6 +2,4 @@
 
 source /usr/share/yunohost/helpers
 
-ynh_backup \
-    --src_path="$install_dir/dist" \
-    --is_big
+ynh_backup "$install_dir/dist"

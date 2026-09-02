@@ -5,7 +5,7 @@ source /usr/share/yunohost/helpers
 source "$(dirname "$0")/_common.sh"
 
 ynh_script_progression --message="Restoring Armada files..." --weight=1
-ynh_restore_file --origin_path="$install_dir/dist"
+ynh_restore "$install_dir/dist"
 chown -R www-data: "$install_dir"
 
 ynh_script_progression --message="Restoring Armada Nginx configuration..." --weight=1

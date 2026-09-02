@@ -3,7 +3,7 @@ packaging_format = 2
 id = "armada"
 name = "Armada"
 description.en = "End-to-end encrypted community chat built on Nostr"
-version = "0.3.0~ynh5"
+version = "0.3.0~ynh6"
 maintainers = ["armada_ynh contributors"]
 
 [upstream]
