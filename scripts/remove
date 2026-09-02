@@ -4,7 +4,7 @@ set -eu
 source /usr/share/yunohost/helpers
 
 ynh_script_progression --message="Removing Armada Nginx configuration..." --weight=1
-ynh_remove_nginx_config
+ynh_config_remove_nginx
 
 ynh_script_progression --message="Removing Armada files..." --weight=1
 ynh_secure_remove --file="$install_dir"

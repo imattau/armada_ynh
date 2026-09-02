@@ -10,6 +10,6 @@ ynh_script_progression --message="Building Armada frontend..." --weight=5
 build_armada
 
 ynh_script_progression --message="Updating Nginx configuration..." --weight=1
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 ynh_script_progression --message="Armada upgrade complete" --last
